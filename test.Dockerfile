@@ -1,0 +1,8 @@
+ARG DOCKER_TAG
+FROM ${DOCKER_TAG}
+
+
+ARG PRIVATE_KEY
+ARG RPC_URL
+RUN ls -al
+RUN yarn hardhat test
